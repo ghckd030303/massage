@@ -48,6 +48,20 @@
   --brand-700: oklch(0.65 0.04 230);
   --brand-800: oklch(0.6 0.045 230);
   --brand-900: oklch(0.55 0.05 230);
+
+  /* Massage Theme - Warm Beige & Coral Tones */
+  --massage-beige-50: oklch(0.98 0.01 60);
+  --massage-beige-100: oklch(0.95 0.02 60);
+  --massage-beige-200: oklch(0.92 0.03 60);
+  --massage-beige-300: oklch(0.88 0.04 60);
+  --massage-beige-400: oklch(0.84 0.05 60);
+  --massage-beige-500: oklch(0.8 0.06 60);
+  --massage-coral-100: oklch(0.85 0.08 40);
+  --massage-coral-200: oklch(0.78 0.1 40);
+  --massage-coral-300: oklch(0.7 0.12 40);
+  --massage-brown-700: oklch(0.45 0.04 50);
+  --massage-brown-800: oklch(0.35 0.05 50);
+  --massage-brown-900: oklch(0.25 0.06 50);
 }
 
 .dark {
@@ -137,4 +151,9 @@ Tailwind의 색상 유틸리티와 연결하고, 폰트 변수도 설정합니�
   body {
     @apply bg-background text-foreground;
   }
+}
+
+@font-face {
+  font-family: "NanumGothic";
+  src: url("//fonts.googleapis.com/earlyaccess/notosanskr.css");
 }
