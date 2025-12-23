@@ -1,6 +1,6 @@
 "use client";
 import Image from "next/image";
-import { CreditCard, Banknote, Wallet, MapPin, Clock } from "lucide-react";
+import { CreditCard, Banknote, Wallet, Clock } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import Lottie from "lottie-react";
 import locationLottie from "../../public/images/location.json";
@@ -32,7 +32,7 @@ export default function Home() {
           {/* Title and Phone */}
           <div className="mx-auto w-full max-w-7xl">
             <div className="flex flex-col items-center justify-start gap-4 sm:flex-row sm:items-start">
-              <div className="flex h-18 w-80 items-center justify-center">
+              <div className="flex h-25 w-110 items-center justify-center">
                 <Image
                   src="/images/title2.svg"
                   alt="logo"
@@ -60,16 +60,16 @@ export default function Home() {
 
           {/* Center Text on Image */}
           <div className="mx-auto max-w-4xl text-center">
-            <h2 className="font-NanumGothic mb-6 text-4xl tracking-wide text-white drop-shadow-2xl sm:text-5xl lg:text-6xl">
+            <h2 className="font-NanumGothic mb-6 text-4xl font-semibold tracking-wide text-white drop-shadow-2xl sm:text-5xl lg:text-6xl">
               코스 문의는 편하게 전화 주세요
             </h2>
-            <p className="font-NanumGothic mb-10 text-xl text-white/90 drop-shadow-xl sm:text-2xl lg:text-3xl">
+            <p className="font-NanumGothic font-base mb-10 text-xl text-white/90 drop-shadow-xl sm:text-2xl lg:text-3xl">
               고객님께 최상의 힐링 경험을 선사해드립니다
             </p>
             <a href={telLink} aria-label={`전화 문의 ${phoneNumber}`}>
               <Button
                 size="lg"
-                className="hover:shadow-3xl group h-auto animate-pulse bg-[var(--massage-coral-200)] px-10 py-6 text-2xl font-bold text-white shadow-2xl transition-all duration-300 hover:animate-none hover:bg-[var(--massage-coral-300)] sm:px-16 sm:py-8 sm:text-3xl"
+                className="hover:shadow-3xl group h-auto animate-pulse bg-gradient-to-r from-[#eb5459] to-orange-200 px-10 py-6 text-2xl font-bold text-white shadow-2xl transition-all duration-300 hover:animate-none hover:bg-[var(--massage-coral-300)] sm:px-16 sm:py-8 sm:text-3xl"
               >
                 {phoneNumber}
               </Button>
@@ -78,52 +78,6 @@ export default function Home() {
 
           {/* Spacer */}
           <div />
-        </div>
-      </section>
-
-      {/* Payment Methods Section */}
-      <section className="font-NanumGothic bg-gradient-to-b from-[var(--massage-beige-200)] via-[var(--massage-coral-100)] to-[var(--massage-beige-200)] px-4 py-16 sm:px-6 sm:py-20">
-        <div className="mx-auto max-w-4xl">
-          <h2 className="font-NanumGothic mb-12 text-center text-3xl tracking-wide sm:text-4xl">
-            결제 방법
-          </h2>
-          <div className="grid grid-cols-1 gap-6 sm:grid-cols-3 sm:gap-8">
-            <div className="flex flex-col items-center rounded-2xl bg-white/80 p-8 shadow-lg backdrop-blur-sm transition-all duration-300 hover:-translate-y-2 hover:bg-white hover:shadow-2xl">
-              <div className="mb-4 rounded-full bg-[var(--massage-coral-200)] p-6">
-                <Banknote className="h-10 w-10 text-white sm:h-12 sm:w-12" />
-              </div>
-              <h3 className="text-xl font-bold text-[var(--massage-brown-900)] sm:text-2xl">
-                현금
-              </h3>
-              <p className="mt-2 text-center text-base text-[var(--massage-brown-700)] sm:text-lg">
-                현장 결제 가능
-              </p>
-            </div>
-
-            <div className="flex flex-col items-center rounded-2xl bg-white/80 p-8 shadow-lg backdrop-blur-sm transition-all duration-300 hover:-translate-y-2 hover:bg-white hover:shadow-2xl">
-              <div className="mb-4 rounded-full bg-[var(--massage-coral-200)] p-6">
-                <CreditCard className="h-10 w-10 text-white sm:h-12 sm:w-12" />
-              </div>
-              <h3 className="text-xl font-bold text-[var(--massage-brown-900)] sm:text-2xl">
-                카드
-              </h3>
-              <p className="mt-2 text-center text-base text-[var(--massage-brown-700)] sm:text-lg">
-                모든 카드 사용 가능
-              </p>
-            </div>
-
-            <div className="flex flex-col items-center rounded-2xl bg-white/80 p-8 shadow-lg backdrop-blur-sm transition-all duration-300 hover:-translate-y-2 hover:bg-white hover:shadow-2xl">
-              <div className="mb-4 rounded-full bg-[var(--massage-coral-200)] p-6">
-                <Wallet className="h-10 w-10 text-white sm:h-12 sm:w-12" />
-              </div>
-              <h3 className="text-xl font-bold text-[var(--massage-brown-900)] sm:text-2xl">
-                계좌이체
-              </h3>
-              <p className="mt-2 text-center text-base text-[var(--massage-brown-700)] sm:text-lg">
-                편리한 이체 가능
-              </p>
-            </div>
-          </div>
         </div>
       </section>
 
@@ -191,13 +145,58 @@ export default function Home() {
               <a href={telLink} aria-label={`지금 전화하기 ${phoneNumber}`}>
                 <Button
                   size="lg"
-                  className="hover:shadow-3xl group h-auto bg-[var(--massage-coral-300)] px-12 py-7 text-3xl font-bold text-white shadow-2xl transition-all duration-300 hover:bg-[var(--massage-coral-200)] sm:px-20 sm:py-9 sm:text-4xl"
+                  className="hover:shadow-3xl group h-auto bg-gradient-to-r from-[#eb5459] to-orange-200 px-12 py-7 text-3xl font-bold text-white shadow-2xl transition-all duration-300 hover:bg-[var(--massage-coral-200)] sm:px-20 sm:py-9 sm:text-4xl"
                 >
                   {phoneNumber}
                 </Button>
               </a>
               <p className="text-lg text-white/90 drop-shadow-lg sm:text-xl">
                 언제든지 편하게 연락주세요
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+      {/* Payment Methods Section */}
+      <section className="font-NanumGothic bg-gradient-to-b from-[var(--massage-beige-200)] via-[var(--massage-coral-100)] to-[var(--massage-beige-200)] px-4 py-16 sm:px-6 sm:py-20">
+        <div className="mx-auto max-w-4xl">
+          <h2 className="font-NanumGothic mb-12 text-center text-3xl tracking-wide sm:text-4xl">
+            결제 방법
+          </h2>
+          <div className="grid grid-cols-1 gap-6 sm:grid-cols-3 sm:gap-8">
+            <div className="flex flex-col items-center rounded-2xl bg-white/80 p-8 shadow-lg backdrop-blur-sm transition-all duration-300 hover:-translate-y-2 hover:bg-white hover:shadow-2xl">
+              <div className="mb-4 rounded-full bg-[var(--massage-coral-200)] p-6">
+                <Banknote className="h-10 w-10 text-white sm:h-12 sm:w-12" />
+              </div>
+              <h3 className="text-xl font-bold text-[var(--massage-brown-900)] sm:text-2xl">
+                현금
+              </h3>
+              <p className="mt-2 text-center text-base text-[var(--massage-brown-700)] sm:text-lg">
+                현장 결제 가능
+              </p>
+            </div>
+
+            <div className="flex flex-col items-center rounded-2xl bg-white/80 p-8 shadow-lg backdrop-blur-sm transition-all duration-300 hover:-translate-y-2 hover:bg-white hover:shadow-2xl">
+              <div className="mb-4 rounded-full bg-[var(--massage-coral-200)] p-6">
+                <CreditCard className="h-10 w-10 text-white sm:h-12 sm:w-12" />
+              </div>
+              <h3 className="text-xl font-bold text-[var(--massage-brown-900)] sm:text-2xl">
+                카드
+              </h3>
+              <p className="mt-2 text-center text-base text-[var(--massage-brown-700)] sm:text-lg">
+                모든 카드 사용 가능
+              </p>
+            </div>
+
+            <div className="flex flex-col items-center rounded-2xl bg-white/80 p-8 shadow-lg backdrop-blur-sm transition-all duration-300 hover:-translate-y-2 hover:bg-white hover:shadow-2xl">
+              <div className="mb-4 rounded-full bg-[var(--massage-coral-200)] p-6">
+                <Wallet className="h-10 w-10 text-white sm:h-12 sm:w-12" />
+              </div>
+              <h3 className="text-xl font-bold text-[var(--massage-brown-900)] sm:text-2xl">
+                계좌이체
+              </h3>
+              <p className="mt-2 text-center text-base text-[var(--massage-brown-700)] sm:text-lg">
+                편리한 이체 가능
               </p>
             </div>
           </div>
