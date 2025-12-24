@@ -11,6 +11,12 @@ export default function Home() {
 
   return (
     <div className="min-h-screen">
+      {/* SEO H1 - 검색엔진용 (시각적으로 숨김) */}
+      <h1 className="sr-only">
+        부산 프리미엄 출장 마사지 서비스 - 김해, 양산, 기장 전지역 30분 이내
+        방문, 전문 테라피스트의 고품격 힐링 케어
+      </h1>
+
       {/* Hero Section with Background Image */}
       <section className="relative min-h-[85vh] overflow-hidden">
         {/* Background Image */}
