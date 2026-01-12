@@ -23,7 +23,7 @@ export default function Home() {
       {/* SEO H1 - 검색엔진용 (시각적으로 숨김) */}
       <h1 className="sr-only">
         부산 출장 마사지 서비스 - 서면, 해운대, 남포동, 연산동, 김해, 양산, 기장
-        전지역 30분 이내 방문, 전문 테라피스트의 고품격 힐링 케어
+        전지역 30분 이내 방문
       </h1>
 
       {/* Hero Section with Background Image */}
@@ -75,8 +75,8 @@ export default function Home() {
 
           {/* Center Text on Image */}
           <div className="mx-auto max-w-4xl text-center">
-            <h2 className="font-NanumGothic mb-6 text-4xl font-semibold tracking-wide text-white drop-shadow-2xl sm:text-5xl lg:text-6xl">
-              코스 문의는 편하게 전화 주세요
+            <h2 className="font-NanumGothic mb-6 text-4xl font-semibold tracking-wide break-keep text-white drop-shadow-2xl sm:text-5xl lg:text-6xl">
+              코스 문의는 편하게 전화주세요
             </h2>
             <p className="font-NanumGothic font-base mb-10 text-xl text-white/90 drop-shadow-xl sm:text-2xl lg:text-3xl">
               고객님께 최상의 힐링 경험을 선사해드립니다
@@ -84,7 +84,7 @@ export default function Home() {
             <a href={telLink} aria-label={`전화 문의 ${phoneNumber}`}>
               <Button
                 size="lg"
-                className="hover:shadow-3xl group h-auto animate-pulse bg-gradient-to-r from-[#eb5459] to-orange-200 px-10 py-6 text-2xl font-bold text-white shadow-2xl transition-all duration-300 hover:animate-none hover:bg-[var(--massage-coral-300)] sm:px-16 sm:py-8 sm:text-3xl"
+                className="hover:shadow-3xl group h-auto animate-pulse bg-gradient-to-r from-[#1e88a8] to-cyan-300 px-10 py-6 text-2xl font-bold text-white shadow-2xl transition-all duration-300 hover:animate-none hover:bg-[var(--massage-coral-300)] sm:px-16 sm:py-8 sm:text-3xl"
               >
                 {phoneNumber}
               </Button>
@@ -151,22 +151,22 @@ export default function Home() {
         <div className="relative z-10 flex min-h-[70vh] flex-col justify-center px-4 py-20 sm:px-6 sm:py-24 lg:py-32">
           <div className="mx-auto max-w-4xl text-center">
             <h2 className="font-NanumGothic mb-6 text-3xl tracking-wide text-white drop-shadow-2xl sm:text-4xl lg:text-5xl">
-              지금 바로 문의하세요
+              오늘 바로 예약 가능합니다
             </h2>
             <p className="font-NanumGothic mb-10 text-xl text-white/90 drop-shadow-xl sm:text-2xl">
-              편안한 힐링의 시간을 선물해드립니다
+              프리미엄 마사지 케어를 경험해보세요
             </p>
             <div className="flex flex-col items-center gap-6">
               <a href={telLink} aria-label={`지금 전화하기 ${phoneNumber}`}>
                 <Button
                   size="lg"
-                  className="hover:shadow-3xl group h-auto bg-gradient-to-r from-[#eb5459] to-orange-200 px-12 py-7 text-3xl font-bold text-white shadow-2xl transition-all duration-300 hover:bg-[var(--massage-coral-200)] sm:px-20 sm:py-9 sm:text-4xl"
+                  className="hover:shadow-3xl group h-auto bg-gradient-to-r from-[#1e88a8] to-cyan-300 px-12 py-7 text-3xl font-bold text-white shadow-2xl transition-all duration-300 hover:bg-[var(--massage-coral-200)] sm:px-20 sm:py-9 sm:text-4xl"
                 >
                   {phoneNumber}
                 </Button>
               </a>
               <p className="text-lg text-white/90 drop-shadow-lg sm:text-xl">
-                언제든지 편하게 연락주세요
+                상담 전화는 24시간 가능합니다
               </p>
             </div>
           </div>
@@ -252,85 +252,86 @@ export default function Home() {
               {/* 부산 출장 마사지 */}
               <div className="space-y-3">
                 <h2 className="text-lg font-semibold text-[var(--massage-brown-900)] sm:text-xl">
-                  부산 출장 마사지 서비스 소개
+                  부산 프리미엄 마사지 케어 서비스
                 </h2>
                 <p>
-                  부산 출장 마사지는 바쁜 일상 속에서 편안하게 힐링을 경험하실
-                  수 있는 프리미엄 케어 서비스입니다. 부산 전지역을 대상으로
-                  30분 이내 신속한 방문 서비스를 제공하며, 전문 교육을 받은
-                  숙련된 테라피스트들이 고객님의 피로를 풀어드립니다. 부산
-                  시내는 물론 외곽 지역까지 빠르게 방문하여, 집이나 호텔에서
-                  편안하게 마사지를 받으실 수 있습니다. 부산 출장 마사지는
-                  현대인의 스트레스 해소와 근육 이완에 탁월한 효과를 제공합니다.
+                  부산 프리미엄 웰니스 케어는 바쁜 현대인을 위한 맞춤형 힐링
+                  서비스입니다. 부산 주요지역을 대상으로 30분 이내 신속한 방문
+                  서비스를 제공하며, 전문 인증을 받은 케어 전문가들이 고객님의
+                  피로를 풀어드립니다. 해운대, 센텀시티 등 부산 핵심 지역은 물론
+                  주변 지역까지 방문하여, 편안한 공간에서 프리미엄 케어를 받으실
+                  수 있습니다. 스트레스 해소와 몸의 균형 회복에 최적화된
+                  서비스를 제공합니다.
                 </p>
               </div>
 
-              {/* 서면 출장 마사지 */}
+              {/* 센텀시티 웰니스 케어 */}
               <div className="space-y-3">
                 <h3 className="text-base font-semibold text-[var(--massage-brown-900)] sm:text-lg">
-                  서면 출장 마사지 - 부산의 중심에서 만나는 힐링
+                  센텀시티 마사지 케어 - 비즈니스 중심지의 프리미엄 힐링
                 </h3>
                 <p>
-                  서면 출장 마사지는 부산의 대표적인 번화가인 서면 지역에 특화된
-                  서비스입니다. 서면은 쇼핑과 업무의 중심지로 많은 분들이 피로를
-                  느끼시는 지역입니다. 서면 출장 마사지 서비스는 서면역, 전포동,
-                  부전동 일대를 포함하여 빠른 시간 내에 방문합니다. 서면 지역
-                  호텔이나 오피스텔, 자택까지 편리하게 이용하실 수 있으며,
-                  쇼핑이나 업무 후 지친 몸과 마음을 달래드립니다. 서면 출장
-                  마사지는 접근성이 뛰어나 많은 고객님들께서 선호하시는
+                  센텀시티 마사지 케어는 부산의 핵심 비즈니스 지역인 센텀시티에
+                  특화된 프리미엄 서비스입니다. 센텀은 대형 쇼핑몰과 오피스가
+                  집중된 곳으로 많은 직장인들이 피로를 느끼는 지역입니다.
+                  센텀시티 케어 서비스는 BEXCO, 신세계백화점, 영화의전당 일대를
+                  포함하여 신속하게 방문합니다. 센텀 지역 고급 호텔이나
+                  레지던스, 오피스텔까지 편리하게 이용하실 수 있으며, 업무나
+                  쇼핑 후 지친 몸과 마음을 회복시켜드립니다. 센텀시티 웰니스
+                  케어는 뛰어난 접근성으로 많은 고객님들이 선호하시는
                   서비스입니다.
                 </p>
               </div>
 
-              {/* 해운대 출장 마사지 */}
+              {/* 해운대 웰니스 케어 */}
               <div className="space-y-3">
                 <h3 className="text-base font-semibold text-[var(--massage-brown-900)] sm:text-lg">
-                  해운대 출장 마사지 - 해변의 휴양지에서 누리는 프리미엄 케어
+                  해운대 마사지 케어 - 해변 리조트에서 누리는 최상급 케어
                 </h3>
                 <p>
-                  해운대 출장 마사지는 부산의 대표 관광지이자 고급 주거 지역인
-                  해운대에서 제공되는 프리미엄 서비스입니다. 해운대 해수욕장,
-                  센텀시티, 마린시티 등 해운대 전지역을 커버하며, 특히 관광객과
-                  비즈니스 출장객들에게 인기가 높습니다. 해운대 출장 마사지는
-                  고급스러운 서비스 품질로 여행의 피로를 풀어드리고, 재방문율이
-                  높은 것이 특징입니다. 해운대 지역 특급 호텔은 물론 레지던스와
-                  아파트까지 방문하여 최상의 힐링 경험을 선사합니다. 해운대 출장
-                  마사지로 바다의 정취와 함께 완벽한 휴식을 누리실 수 있습니다.
+                  해운대 마사지 케어는 부산의 대표 관광지이자 고급 주거 지역인
+                  해운대에서 제공되는 최상급 서비스입니다. 해운대 해수욕장,
+                  동백섬, 마린시티 등 해운대 전 지역을 커버하며, 특히 관광객과
+                  출장 방문객들에게 인기가 높습니다. 해운대 웰니스 케어는 최고급
+                  서비스 품질로 여행의 피로를 풀어드리고, 높은 만족도가
+                  특징입니다. 해운대 지역 특1급 호텔은 물론 고급 레지던스와
+                  프리미엄 아파트까지 방문하여 최상의 웰니스 경험을 제공합니다.
+                  해운대 케어로 바다의 정취와 함께 완벽한 휴식을 경험하세요.
                 </p>
               </div>
 
-              {/* 남포동 출장 마사지 */}
+              {/* 수영구 웰니스 케어 */}
               <div className="space-y-3">
                 <h3 className="text-base font-semibold text-[var(--massage-brown-900)] sm:text-lg">
-                  남포동 출장 마사지 - 원도심의 활력을 되찾아드립니다
+                  수영구 마사지 케어 - 해안가의 품격있는 힐링
                 </h3>
                 <p>
-                  남포동 출장 마사지는 부산의 전통적인 중심가인 남포동과 자갈치,
-                  국제시장 일대에서 이용 가능한 서비스입니다. 남포동은
-                  관광객들이 많이 찾는 명소로, 걷기 관광으로 인한 피로를
-                  호텔이나 숙소에서 편안하게 풀어드립니다. 남포동 출장 마사지는
-                  전통과 현대가 공존하는 지역 특성에 맞춰 다양한 코스를
-                  제공하며, 합리적인 가격으로 이용하실 수 있습니다. 남포동,
-                  광복동, 중앙동 등 중구 전역을 서비스 지역으로 하고 있어
-                  접근성이 우수합니다. 남포동 출장 마사지로 부산의 정취를 느끼며
-                  재충전하시기 바랍니다.
+                  수영구 마사지 케어는 부산의 고급 주거지역인 수영구와 남천동,
+                  광안리 일대에서 제공되는 프리미엄 서비스입니다. 수영구는
+                  방문객들이 많이 찾는 핫플레이스로, 해변 산책으로 인한 피로를
+                  호텔이나 숙소에서 편안하게 풀어드립니다. 수영구 웰니스 케어는
+                  현대적이고 세련된 지역 특성에 맞춰 맞춤형 프로그램을 제공하며,
+                  프리미엄 가격대로 최상급 케어를 경험하실 수 있습니다. 수영구,
+                  남천동, 민락동 등 수영구 전역을 커버하고 있어 접근성이
+                  뛰어납니다. 수영구 웰니스 케어로 부산의 바다를 느끼며 완벽한
+                  휴식을 취하세요.
                 </p>
               </div>
 
-              {/* 연산동 출장 마사지 */}
+              {/* 동래 웰니스 케어 */}
               <div className="space-y-3">
                 <h3 className="text-base font-semibold text-[var(--massage-brown-900)] sm:text-lg">
-                  연산동 출장 마사지 - 동부산의 주거 중심지에서
+                  동래 마사지 케어 - 온천의 고장에서의 완벽한 힐링
                 </h3>
                 <p>
-                  연산동 출장 마사지는 동부산의 대표적인 주거 및 상업 지역인
-                  연산동에서 제공되는 맞춤형 서비스입니다. 연산동은 롯데백화점과
-                  지하철역을 중심으로 발전한 지역으로, 많은 직장인과 가족 단위
-                  거주자들이 생활하고 있습니다. 연산동 출장 마사지는 일상의
-                  피로와 스트레스를 집에서 편안하게 해소할 수 있도록
-                  도와드립니다. 연산동, 거제동, 온천동 등 인근 지역까지 빠르게
-                  방문하며, 늦은 시간까지 예약이 가능합니다. 연산동 출장
-                  마사지로 퇴근 후 집에서 프라이빗하게 케어를 받아보세요.
+                  동래 마사지 케어는 동부산의 대표적인 온천 및 문화 지역인
+                  동래에서 제공되는 특별한 서비스입니다. 동래는 온천장과
+                  지하철역을 중심으로 발전한 전통 깊은 지역으로, 많은 관광객과
+                  주민들이 방문하는 곳입니다. 동래 웰니스 케어는 일상의 피로와
+                  스트레스를 온천과 함께 편안하게 해소할 수 있도록 도와드립니다.
+                  동래, 온천장, 사직동 등 인근 지역까지 신속하게 방문하며, 늦은
+                  시간까지 예약이 가능합니다. 동래 웰니스 케어로 퇴근 후 집에서
+                  프라이빗하게 최상급 케어를 받아보세요.
                 </p>
               </div>
 
@@ -386,22 +387,22 @@ export default function Home() {
                 </p>
               </div>
 
-              {/* 광안리 출장 마사지 */}
+              {/* 광안리 웰니스 케어 */}
               <div className="space-y-3">
                 <h3 className="text-base font-semibold text-[var(--massage-brown-900)] sm:text-lg">
-                  광안리 출장 마사지 - 부산의 해변 휴양지에서 편안한 휴식
+                  광안리 마사지 케어 - 부산 해변의 낭만적 힐링
                 </h3>
                 <p>
-                  광안리 출장 마사지는 부산의 대표적인 해변 지역인 광안리에서
-                  이용하실 수 있는 프리미엄 서비스입니다. 광안리는 부산의
-                  대표적인 관광지로, 해수욕장과 광안대교, 광안육교 등 많은
-                  관광객들이 찾는 명소입니다. 광안리 출장 마사지는 광안리
-                  전지역을 커버하며, 특히 관광객과 비즈니스 출장객들에게 인기가
-                  높습니다. 광안리 출장 마사지는 고급스러운 서비스 품질로 여행의
-                  피로를 풀어드리고, 재방문율이 높은 것이 특징입니다. 광안리
-                  지역의 특급 호텔은 물론 레지던스와 아파트까지 방문하여 최상의
-                  힐링 경험을 선사합니다. 광안리 출장 마사지로 바다의 정취와
-                  함께 완벽한 휴식을 누리실 수 있습니다.
+                  광안리 마사지 케어는 부산의 대표적인 해변 지역인 광안리에서
+                  이용하실 수 있는 최상급 서비스입니다. 광안리는 부산의
+                  핫플레이스로, 해수욕장과 광안대교, 카페거리 등 많은 방문객들이
+                  찾는 명소입니다. 광안리 웰니스 케어는 광안리 전 지역을
+                  커버하며, 특히 관광객과 출장 방문객들에게 큰 인기를 얻고
+                  있습니다. 광안리 웰니스 케어는 최고급 서비스 품질로 여행의
+                  피로를 해소해드리고, 높은 재방문율이 특징입니다. 광안리 지역의
+                  고급 호텔은 물론 프리미엄 레지던스와 아파트까지 방문하여
+                  최상의 웰니스 경험을 제공합니다. 광안리 케어로 바다의 낭만과
+                  함께 완벽한 힐링을 누리실 수 있습니다.
                 </p>
               </div>
 
@@ -446,19 +447,19 @@ export default function Home() {
               {/* 서비스 특징 */}
               <div className="space-y-3">
                 <h3 className="text-base font-semibold text-[var(--massage-brown-900)] sm:text-lg">
-                  프리미엄 출장 마사지 서비스의 특징
+                  프리미엄 마사지 케어 서비스의 특징
                 </h3>
                 <p>
-                  저희 출장 마사지 서비스는 고객님의 편의를 최우선으로
+                  저희 마사지 케어 서비스는 고객님의 만족을 최우선 가치로
                   생각합니다. 전화 한 통으로 간편하게 예약하실 수 있으며, 예약
-                  후 30분 이내 신속하게 방문합니다. 전문 교육을 이수한
-                  테라피스트들이 고객님의 상태를 세심하게 체크하여 맞춤형 케어를
-                  제공하며, 위생과 안전을 최우선으로 관리합니다. 결제는 현금,
-                  카드, 계좌이체 등 다양한 방법으로 가능하여 편리하게 이용하실
-                  수 있습니다. 프라이빗한 공간에서 편안하게 받는 마사지는 샵
-                  방문과는 다른 특별한 경험을 선사합니다. 부산, 서면, 해운대,
-                  남포동, 연산동, 김해, 기장, 양산 어디서든 최고의 힐링 서비스를
-                  경험해보세요.
+                  후 30분 이내 신속하게 방문합니다. 전문 인증을 받은 케어
+                  전문가들이 고객님의 컨디션을 세밀하게 체크하여 개인 맞춤형
+                  프로그램을 제공하며, 위생과 안전 관리를 철저히 합니다. 결제는
+                  현금, 카드, 계좌이체 등 다양한 방법으로 가능하여 편리하게
+                  이용하실 수 있습니다. 프라이빗한 공간에서 편안하게 받는 웰니스
+                  케어는 매장 방문과는 완전히 다른 특별한 경험을 선사합니다.
+                  부산, 해운대, 센텀시티, 수영구, 동래, 마린시티, 기장, 양산
+                  어디서든 최상급 마사지 케어를 경험해보세요.
                 </p>
               </div>
             </div>

@@ -1,7 +1,7 @@
 import { MetadataRoute } from "next";
 
 export default function sitemap(): MetadataRoute.Sitemap {
-  const baseUrl = "https://taiwelcome.vercel.app"; // 실제 도메인으로 변경 필요
+  const baseUrl = "https://massage-in-busan.vercel.app"; // 실제 도메인으로 변경 필요
 
   return [
     {
@@ -12,4 +12,3 @@ export default function sitemap(): MetadataRoute.Sitemap {
     },
   ];
 }
-
