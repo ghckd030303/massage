@@ -12,7 +12,7 @@ const geistMono = Geist_Mono({
   subsets: ["latin"],
 });
 
-const siteUrl = "https://taiwelcome.vercel.app"; // 실제 배포된 도메인으로 변경 필요
+const siteUrl = "https://quick-massage.netlify.app"; // 실제 배포된 도메인으로 변경 필요
 
 export const metadata: Metadata = {
   metadataBase: new URL(siteUrl),
@@ -66,9 +66,9 @@ export const metadata: Metadata = {
     images: ["/faviconImages/apple-icon-180x180.png"],
   },
   verification: {
-    google: "-LmsuREJ0S5zNs3U4rJqf8E4khPrG2VnMn-FVueLphk",
+    google: "ARevL5P5DBHyyG-PNZS1nh6sfU73dluKk96g1OU-_Ks",
     other: {
-      "naver-site-verification": "c02681d6e9ab94060ddd8ff714c05fe56411d9dc",
+      "naver-site-verification": "53049009ab76ed3666443f0faeafa58298e5b415",
     },
   },
 };
